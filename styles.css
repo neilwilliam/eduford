@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero section editing */
+.hero_section {
+    background-image: url(/images/banner);;
+  }
+  .hero_section {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }  
+  
+  /* Nav Menu Edit */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;  
+  }
+  
+  nav img {
+    width: 50%;
+  }
+  
+  .nav-items {
+    flex: 1;
+    text-align: right;
+  }
+  .nav-items ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-items ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+  }
+  .nav-items ul li::after {
+    content:'';
+    background: #f44336;
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-items ul li:hover::after {
+    width: 100%;
+  }
+  
+  .hero-texts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    
+  }
+  .hero-texts h1{
+    font-size: 62px;
+    letter-spacing: 2px;
+  }
+  .hero-texts p{
+    font-size: 14px;
+    margin: 10px 0 40px; 
+  }
+  .hero-btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+  }
+  .hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+  }
+  nav .bi {
+    display: none;
+  }
+  
+  /* Course section style */
+  
+  .course {
+    width: 80%;
+    padding-top: 40px;
+    margin: 60px auto 0 auto;
+    text-align: center;
+  }
+  .course h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .course p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 30px;
+  }
+  .course-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+  }
+  .course-boxes {
+     flex-basis: 32%; /* flex-basis or width */
+     background: #fff3f3;
+     box-sizing: border-box;
+     border-radius: 0 30px 0 0;
+     margin-bottom: 5%;
+     padding: 3% 5% 2% 5%;
+     transition: .7s ease;
+  }
+  .course-boxes h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .course-boxes:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    cursor: default;
+    transform: translateY(-10px);
+  }
+  
+  /* Campus section style */
+  
+  .campus {
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+  }
+  .campus h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .campus p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 50px;
+  }
+  .campus-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .imgbox {
+    flex-basis: 32%;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .imgbox img{
+    width:100%;
+    height: 80%;
+    border-radius: 10px;
+    
+  }
+  .layer {
+    background: transparent;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    border-radius: 10px;
+    transition: .7s ease;
+  }
+  .layer h3 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    transition: .5s ease;
+    opacity: 0;
+  }
+  .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+  }
+  .layer:hover {
+    background: rgba(226, 0, 0, 0.5);
+  }
+  
+  /* Facilities Section Style */
+  
+  .facilities {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    
+  }
+  .facilities h1 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 30px;
+  }
+  .facilities p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 50px;
+  }
+  .facility-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .facility-box {
+    flex-basis: 32%;
+    height: 0%;
+    text-align: left;
+    padding-bottom: 10px;
+    
+  }
+  .facility-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .facility-box h4 {
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  
+  
+  /* Testimonial Section Style */
+  
+  .testimonial {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+  
+  }
+  .testimonial h1 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 50px;
+  }
+  .testimonial p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 50px;
+  }
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .testimonial-review {
+    flex-basis: 44.5%;
+    border-radius: 10px;
+    text-align: left;
+    background: #fff3f3;
+    cursor: pointer;
+    padding: 30px 20px 30px 30px;
+    display: flex;
+  }
+  .testimonial-review img {
+    
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px 0 10px;
+  }
+  .review-col {
+    display: block;
+    padding-right: 5px;
+  }
+  .review-col p{
+    padding-bottom: 15px;
+  }
+  .review-col h4{
+    padding-bottom: 5px;
+  }
+  .review-col i{
+    color: #f44336;
+  }
+  
+  /* Contact Section Style */
+  
+  .contact {
+    width: 80%;
+    margin: 100px auto;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(eduford_img/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 120px 0;
+  }
+  .contact h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 35px;
+  }
+  
+  /* About Section */
+  
+  .about {
+    width: 80%;
+    margin: 100px auto 20px auto;
+    text-align: center;
+    display: block;
+  }
+  .about h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+  .about p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+  .about i {
+    display: inline-block;
+    color: #f44336;
+    padding: 0 10px;
+    margin: 15px 0 0px 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .copyright p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    line-height: 22px;
+    padding-bottom: 25px;
+  }
+  .copyright i {
+    color: #f44336;
+  }
+  
+  
+  
+  /* Media Query Section for all kinds of elements Start */
+  
+  @media (max-width: 1440px) {
+    .hero-texts h1{
+      font-size: 62px;
+    }
+  
+  }
+  @media (max-width: 768px) {
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+    }
+    nav img {
+      width: 50%;
+    }
+    .nav-items ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 8px 10px;
+      position: relative;
+    }
+    .nav-items ul li a{
+      font-size: 15px;
+    }
+    .hero-texts h1{
+      font-size: 40px;
+    }
+    .course-boxes {
+      padding: 3% 5% 0% 5%;
+    }
+   .layer h3 {
+    font-size: 20px;
+    }
+   .testimonial-review {
+    margin: 0px 5px;
+    }
+    .contact h1 {
+      font-size: 25px;
+    }
+    .about p {
+      padding-left: 9%;
+      padding-right: 9%;
+    }
+  }
+  @media (max-width: 480px) {
+    .hero-texts h1{
+      font-size: 22px;
+    }
+  
+    /* design for the off-canvas menu for mobile screen Start*/
+    
+    .nav-items ul li {
+      display: block;
+    }
+    .nav-items {
+      position:absolute;
+      background:#f44336;
+      height: 100vh;
+      width: 200px;
+      right: -200px;
+      top: 0;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    .nav-items ul {
+      padding: 20px 0 0 0;
+      text-align: center;
+    }
+    nav .bi {
+      display: block;
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+      padding: 10px;
+      
+    }
+    
+    /* design for the off-canvas menu for mobile screen End*/
+  
+    .course-container {
+      flex-direction: column;
+    }
+    .course-boxes {
+      padding: 3% 7% 3% 7%;
+    }
+    .course h1 {
+      font-size: 30px;
+    }
+    .campus h1 {
+      font-size: 30px;
+    }
+    .campus-container {
+      margin-bottom: 50px;
+      flex-direction: column;
+    }
+    .layer {
+      height: 97%;
+      width: 100%;
+      margin-top: 3px;
+    }
+    .imgbox {
+      padding: 5px 0px; 
+    }
+    .facilities h1 {
+      font-size: 30px;
+    }
+    .facility-container {
+      flex-direction: column;
+    }
+    .testimonial h1 {
+      font-size: 30px;
+    }
+    .testimonial-container {
+      flex-direction: column;
+      
+    }
+    .testimonial-review {
+      flex-direction: column;
+      text-align: center;
+      margin: 10px 0px;
+    }
+    .testimonial-review img {
+      width: 30%;
+      height: 30%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      left: 0;
+      top: 0;
+      transform: translateX(95%); 
+    }
+    .contact h1 {
+      font-size: 120%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  
+  /* Media Query Section for all kind of elements End */
